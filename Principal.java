@@ -110,3 +110,55 @@ public class Principal {
 
 
 }
+
+/*public static int sumaColumna(int[][] x, int columna) {
+    int suma = 0;
+    for (int i = 0; i < x.length; i++) {
+        if (columna >= 0 && columna < x[i].length) {
+            suma += x[i][columna];
+        }
+    }
+    return suma;
+}
+
+public static int sumaPrincipal(int[][] x) {
+    int suma = 0;
+    int minSize = Math.min(x.length, x[0].length); // Toma el tamaño mínimo entre filas y columnas
+    for (int i = 0; i < minSize; i++) {
+        suma += x[i][i];
+    }
+    return suma;
+}
+
+public static int sumaInversa(int[][] x) {
+    int suma = 0;
+    int minSize = Math.min(x.length, x[0].length); // Toma el tamaño mínimo entre filas y columnas
+    for (int i = minSize - 1; i >= 0; i--) {
+        suma += x[i][minSize - 1 - i];
+    }
+    return suma;
+}
+ */
+
+/* 
+ public static void rellenarMatriz(Scanner sn, int[][] matriz) {
+    for (int i = 0; i < matriz.length; i++) {
+        for (int j = 0; j < matriz[0].length; j++) {
+            System.out.println("Escribe un numero en la posicion " + i + " " + j);
+            matriz[i][j] = sn.nextInt();
+        }
+    }
+}
+
+public static int sumaFila(int[][] matriz, int fila) {
+    if (fila < 0 || fila >= matriz.length) {
+        throw new IllegalArgumentException("La fila especificada está fuera de los límites");
+    }
+    int suma = 0;
+    for (int j = 0; j < matriz[0].length; j++) {
+        suma += matriz[fila][j];
+    }
+    return suma;
+}
+
+ */
